@@ -92,7 +92,7 @@ header .navbar-brand img{
     border-bottom: 1px solid #820000;
     border-radius: 0;
 }
-.content-menu-lk{
+.card-content-menu{
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 10px;
@@ -129,13 +129,118 @@ header .navbar-brand img{
 .Personal-info-card{
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding: 10px;
+    padding: 24px;
+}
+.user-photo-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-photo-box img{
+    max-width: 267px;
+    max-height: 241px;
+    width: 100%;
+    object-fit: cover;
+}
+.user-id-box{
+    text-align: center;
+    border: 1px solid #820000;
+    border-radius: 5px;
+}
+.user-box-info a{
+    color: #c10f1a;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.user-box-info a:hover{
+    color: #660000;
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+.achievements,.personal-report{
+    background-color: #FFFFFF;
+    padding: 12px;
+    border-radius: 15px;
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.post{
+    background-color: #FFFFFF;
+    padding: 12px;
+    border-radius: 15px;
+}
+.news-photo-box{
+    position: relative !important;
+    border-radius: 10px;
+}
+.date-post-box{
+    position: absolute !important;
+    top: -23px;
+    left: 47px;
+    background-color: #FFFFFF;
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.news-photo-box img{
+    width: 100%;
+    object-fit: cover;
+}
+.descrip-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descrip-post h6{
+    max-height: 40px;
+    overflow: hidden;
+}
+.descrip-post p{
+    font-size: 14px;
+    max-height: 65px;
+    overflow: hidden;
+}
+.under-descrip{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.under-descrip .post-tags a{
+    display: block;
+    border: 1px solid #c10f1a;
+    border-radius: 15px;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: #515151;
+}
+.under-descrip .rubric-post a{
+    color: #c10f1a;
+    transition: .3s linear;
+}
+.under-descrip .rubric-post a:hover{
+    color: #660000;
 }
 /*END LEFT CONTENT*/
 /*MEDIA REQUESTS*/
 @media screen and (max-width: 1399px){
     .lk span{
         font-size: 14px;
+    }
+    .date-post-box{
+        left: 32px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .date-post-box{
+        font-size: 12px;
+        left: 21px;
+        top: -14px;
     }
 }
 @media screen and (max-width: 991px){
@@ -145,10 +250,57 @@ header .navbar-brand img{
     .lk-box{
         justify-content: end !important;
     }
+    .date-post-box{
+        font-size: 14px;
+        left: 32%;
+        top: -14px;
+    }
+}
+@media screen and (max-width: 800px){
+    .date-post-box{
+        left: 28%;
+    }
+}
+@media screen and (max-width: 700px){
+    .date-post-box{
+        left: 25%;
+    }
+}
+@media screen and (max-width: 600px){
+    .date-post-box{
+        left: 20%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .user-box-info h4{
+        font-size: 18px;
+    }
+    .user-box-info span{
+        font-size: 14px;
+    }
+    .date-post-box{
+        left: 41%;
+        font-size: 12px;
+    }
+    .post > div{
+        flex-direction: column;
+    }
+    .post > div > div{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px) {
     .social-links-box{
         display: none;
+    }
+    .btn-box{
+        flex-direction: column;
+    }
+    .achievements{
+        margin-bottom: 8px;
+    }
+    .achievements,.personal-report{
+        width: 100%;
     }
 }
 @media screen and (max-width: 400px){
@@ -163,5 +315,13 @@ header .navbar-brand img{
     }
     .btn-toggle-box,.logo-box{
         width: 35% !important;
+    }
+    .date-post-box{
+        left: 35%;
+    }
+}
+@media screen and (max-width: 320px){
+    .date-post-box{
+        left: 33%;
     }
 }
