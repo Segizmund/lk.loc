@@ -75,6 +75,7 @@ header .navbar-brand img{
 .page-title{
     color: #515151;
 }
+/*RIGHT CONTENT*/
 .menu-lk nav{
     display: flex;
     justify-content: space-between;
@@ -122,6 +123,15 @@ header .navbar-brand img{
     color: #820000;
     border: 1px solid #820000;
 }
+/*END RIGHT CONTENT*/
+
+/*LEFT CONTENT*/
+.Personal-info-card{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+}
+/*END LEFT CONTENT*/
 /*MEDIA REQUESTS*/
 @media screen and (max-width: 1399px){
     .lk span{
