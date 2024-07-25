@@ -28,6 +28,9 @@ header .navbar-brand img{
 }
 .lk-box{
     justify-content: space-between !important;
+    padding: 7px;
+    background-color: #660000 !important;
+    border-radius: 10px;
 }
 .lk-avatar,.lk-avatar img{
     width: 56px;
@@ -51,10 +54,19 @@ header .navbar-brand img{
     font-size: 35px !important;
     color: #FFFFFF !important;
 }
+.dropdown-menu{
+    margin-top: 7px !important;
+    background-color: #660000 !important;
+    border-radius: 15px !important;
+    width: 196px !important;
+}
+.dropdown-menu a{
+    color: #FFFFFF !important;
+}
 /*SEARCH*/
 .input-search{
     border-radius: 10px !important;
-    height: 56px;
+    height: 70px;
 }
 .input-search .input-group-prepend{
     border-top-right-radius: 15px;
@@ -64,6 +76,8 @@ header .navbar-brand img{
 .input-search input{
     background-color: #660000 !important;
     color: #FFFFFF !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .input-search .form-control:focus{
     box-shadow: none !important;
@@ -392,12 +406,19 @@ header .navbar-brand img{
     .date-post-box{
         left: 32px;
     }
+    .dropdown-menu{
+        width: 166px !important;
+    }
 }
 @media screen and (max-width: 1199px){
     .date-post-box{
         font-size: 12px;
         left: 21px;
         top: -14px;
+    }
+    .dropdown-menu{
+        width: 136px !important;
+        min-width: 20px !important;
     }
 }
 @media screen and (max-width: 991px){
@@ -411,6 +432,9 @@ header .navbar-brand img{
         font-size: 14px;
         left: 32%;
         top: -14px;
+    }
+    .dropdown-menu{
+        width: 22% !important;
     }
 }
 @media screen and (max-width: 800px){
@@ -426,6 +450,11 @@ header .navbar-brand img{
 @media screen and (max-width: 600px){
     .date-post-box{
         left: 20%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .dropdown-menu{
+        width: 33% !important;
     }
 }
 @media screen and (max-width: 550px) {
@@ -475,6 +504,10 @@ header .navbar-brand img{
     }
     .date-post-box{
         left: 35%;
+    }
+    .dropdown-menu{
+        width: 39% !important;
+        right: 2%;
     }
 }
 @media screen and (max-width: 320px){
