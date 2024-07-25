@@ -227,6 +227,101 @@ header .navbar-brand img{
     color: #660000;
 }
 /*END LEFT CONTENT*/
+
+/*LOGIN PAGE*/
+.link-to-home{
+    background-color: #820000;
+    text-align: center;
+}
+.link-to-home a{
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .3s linear;
+}
+.link-to-home a:hover {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.section-login{
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo-auth-box .logo-auth{
+    text-align: center;
+}
+.logo-auth-box .logo-auth img{
+    max-width: 133px;
+}
+.login-box .form-check-input:checked {
+    background-color: #C10F1A;
+    border-color: #C10F1A;
+}
+.auth-input{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #3D3D3D !important;
+    border-radius: 0 !important;
+}
+.auth-input:focus,.login-box .form-check-input:focus{
+    box-shadow: none !important;
+}
+.btn-accept{
+    background-color: #C10F1A !important;
+    color: #FFFFFF !important;
+    width: 100%;
+    border-radius: 12px !important;
+}
+.show-password{
+    border: none !important;
+    background-color: transparent !important;
+    position: absolute !important;
+    right: 10px;
+    top:0;
+}
+.captcha,.other-login{
+    background-color: #FFFFFF;
+    padding: 12px;
+    border-radius: 10px;
+}
+.other-methods-auth,.other-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.other-methods-auth .link-reg {
+    color: #C10F1A;
+}
+.other-methods-auth .forgot-pass{
+    text-decoration: none !important;
+    color: #CE7F85 !important;
+}
+.support{
+    display: flex;
+    justify-content: center;
+}
+.support a{
+    color: #3C3C3C;
+    text-decoration: none;
+    transition: .3s linear;
+}
+.support a:hover{
+    color: #820000;
+}
+.support i{
+    font-weight: bold;
+    color: #820000;
+}
+.other-links a{
+    font-size: 14px;
+    color: #7D7D7D;
+    transition: .3s linear;
+}
+.other-links a:hover{
+    color: #C10F1A;
+}
+/*END LOGIN PAGE*/
+
 /*MEDIA REQUESTS*/
 @media screen and (max-width: 1399px){
     .lk span{
