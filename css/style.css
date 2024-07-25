@@ -20,6 +20,12 @@ header .navbar-brand img{
     max-width: 216px;
     max-height: 70px;
 }
+#navbarTogglerDemo3 ul li a{
+    color: #FFFFFF !important;
+}
+#navbarTogglerDemo3 ul li:hover a{
+    color: #7D7D7D !important;
+}
 .lk-box{
     justify-content: space-between !important;
 }
@@ -248,7 +254,23 @@ header .navbar-brand img{
     margin: 0 auto;
 }
 .logo-auth-box .logo-auth{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
     text-align: center;
+    margin: 0 auto;
+}
+.flag-box{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3px 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 41%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .logo-auth-box .logo-auth img{
     max-width: 133px;
@@ -268,9 +290,14 @@ header .navbar-brand img{
 }
 .btn-accept{
     background-color: #C10F1A !important;
+    border:1px solid #C10F1A !important;
     color: #FFFFFF !important;
     width: 100%;
     border-radius: 12px !important;
+}
+.btn-accept:hover{
+    color: #C10F1A !important;
+    background-color: #FFFFFF !important;
 }
 .show-password{
     border: none !important;
@@ -322,6 +349,41 @@ header .navbar-brand img{
 }
 /*END LOGIN PAGE*/
 
+/*REGISTRATION PAGE*/
+.not-father-name-box label{
+    color: #949494;
+}
+.date-label{
+    padding-left: 12px;
+}
+.have-acc-box a{
+    color: #C10F1A;
+}
+/*END REGISTRATION PAGE*/
+
+/*RECOVERY PAGE*/
+.annotation span{
+    color: #838383;
+}
+/*END RECOVERY PAGE*/
+.input-code{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: none !important;
+    background-color: #E7E7E7 !important;
+    border-radius: 10px !important;
+}
+.again-code a{
+    color: #393939;
+    transition: .3s linear;
+}
+.cancel-code a{
+    color: #820000;
+}
+.again-code a:hover,.cancel-code a:hover{
+    color: #C10F1A;
+}
 /*MEDIA REQUESTS*/
 @media screen and (max-width: 1399px){
     .lk span{

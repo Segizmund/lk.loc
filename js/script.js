@@ -27,3 +27,14 @@ eyeIcons.forEach((eyeIcon, index) => {
         }
     });
 });
+
+const notFatherNameCheckbox = document.getElementById("NotFatherName");
+const inputFatherName = document.getElementById("inputFatherName");
+
+notFatherNameCheckbox.addEventListener("change", () => {
+    if (notFatherNameCheckbox.checked) {
+        inputFatherName.disabled = true; // Отключаем поле "Отчество"
+    } else {
+        inputFatherName.disabled = false; // Включаем поле "Отчество"
+    }
+});

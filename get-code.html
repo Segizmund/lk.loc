@@ -95,69 +95,23 @@
         </div>
     </div>
     <div class="login-box text-center">
-        <h3 class="mb-3">Вход</h3>
-        <nav class="nav nav-pills justify-content-evenly" id="pills-tab" role="tablist">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tab-radio" id="pills-email-tab" checked>
-                <label class="form-check-label" for="pills-email-tab">Почта</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tab-radio" id="pills-phone-tab">
-                <label class="form-check-label" for="pills-phone-tab">Номер телефона</label>
-            </div>
-        </nav>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab">
+        <h3 class="mb-3">Восстановление пароля</h3>
+        <div class="annotation mb-3">
+            <span>
+                Сообщение №---- с кодом отправлено на почту <b style="color: black">yandex_mail200@yandex.ru</b>
+            </span>
+        </div>
+            <div>
                 <form action="">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="email" class="auth-input form-control" id="inputEmail" placeholder="Почта">
-                        </div>
+                    <input type="text" class="auth-input form-control mb-3 input-code" id="inputEmail" placeholder="Код подтверждения">
+                    <div class="again-code mb-3">
+                        <a href="#">Отправить еще раз</a>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col position-relative">
-                            <input type="password" class="auth-input form-control" id="inputPassword" placeholder="Пароль">
-                            <span class="show-password input-group-text" style="z-index: 2;">
-                                    <img src="img/eye-close.png" alt="" id="eyeIcon">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="captcha mb-3">
-                        <p class="mb-0">Captcha</p>
-                    </div>
-                    <button type="submit" class="btn btn-accept">Войти</button>
-                </form>
-
-            </div>
-            <div class="tab-pane fade" id="pills-phone" role="tabpanel" aria-labelledby="pills-phone-tab">
-                <form action="">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="tel" class="auth-input form-control" id="inputEmail" placeholder="Номер телефона">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col position-relative">
-                            <input type="password" class="auth-input form-control" id="inputPassword" placeholder="Пароль">
-                            <span class="show-password input-group-text" style="z-index: 2;">
-                                    <img src="img/eye-close.png" alt="" id="eyeIcon">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="captcha mb-3">
-                        <p class="mb-0">Captcha</p>
-                    </div>
-                    <button type="submit" class="btn btn-accept">Войти</button>
+                    <button type="submit" class="btn btn-accept mb-3">Подтвердить</button>
                 </form>
             </div>
-        </div>
-        <div class="other-methods-auth my-3">
-            <a class="link-reg mb-2" href="#">Зарегистрироваться</a>
-            <a class="forgot-pass" href="#">Не помню пароль</a>
-        </div>
-        <div class="other-login mb-3 d-flex flex-column">
-            <span>VK (login)</span>
-            <span>OK (Yandex)</span>
+        <div class="cancel-code mb-3">
+            <span class="pe-1">Не получили код?</span><a href="#">Отменить</a>
         </div>
         <div class="support mb-3">
             <i class="bi bi-chat-text pe-2"></i> <a href="#">Обратиться в поддержку</a>
