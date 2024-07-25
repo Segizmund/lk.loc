@@ -63,6 +63,10 @@ header .navbar-brand img{
 .dropdown-menu a{
     color: #FFFFFF !important;
 }
+.dropdown-menu a:hover{
+    color: #949494 !important;
+    background-color: transparent !important;
+}
 /*SEARCH*/
 .input-search{
     border-radius: 10px !important;
