@@ -27,23 +27,16 @@ header .navbar-brand img{
     color: #7D7D7D !important;
 }
 .lk-box{
-    justify-content: space-between !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 7px;
     background-color: #660000 !important;
     border-radius: 10px;
-}
-.lk-avatar,.lk-avatar img{
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-}
-.lk-avatar{
-    border: 1px solid #FFFFFF;
-    overflow: hidden;
-    background-color: #FFFFFF;
+    height: 51.5px;
 }
 .lk{
-    width: 45%;
+    text-align: center;
 }
 .lk span{
     font-size: 16px;
@@ -70,7 +63,6 @@ header .navbar-brand img{
 /*SEARCH*/
 .input-search{
     border-radius: 10px !important;
-    height: 70px;
 }
 .input-search .input-group-prepend{
     border-top-right-radius: 15px;
@@ -119,7 +111,7 @@ header .navbar-brand img{
 .card-content-menu{
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding: 10px;
+    padding: 12px;
 }
 .content-menu-lk h3{
     color: #515151;
@@ -150,10 +142,15 @@ header .navbar-brand img{
 /*END RIGHT CONTENT*/
 
 /*LEFT CONTENT*/
+.shadow-box-st{
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
 .Personal-info-card{
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding: 24px;
+    padding: 12px;
 }
 .user-photo-box{
     display: flex;
@@ -403,12 +400,22 @@ header .navbar-brand img{
     color: #C10F1A;
 }
 /*MEDIA REQUESTS*/
+@media screen and (width >= 1920px){
+    .date-post-box{
+        left: 75px;
+    }
+}
+@media screen and (width < 1920px){
+    .date-post-box{
+        left: 70px;
+    }
+}
 @media screen and (max-width: 1399px){
     .lk span{
         font-size: 14px;
     }
     .date-post-box{
-        left: 32px;
+        left: 50px;
     }
     .dropdown-menu{
         width: 166px !important;
@@ -417,7 +424,7 @@ header .navbar-brand img{
 @media screen and (max-width: 1199px){
     .date-post-box{
         font-size: 12px;
-        left: 21px;
+        left: 22%;
         top: -14px;
     }
     .dropdown-menu{
@@ -428,9 +435,6 @@ header .navbar-brand img{
 @media screen and (max-width: 991px){
     .search-box{
         display: none;
-    }
-    .lk-box{
-        justify-content: end !important;
     }
     .date-post-box{
         font-size: 14px;
@@ -480,9 +484,6 @@ header .navbar-brand img{
     }
 }
 @media screen and (max-width: 500px) {
-    .social-links-box{
-        display: none;
-    }
     .btn-box{
         flex-direction: column;
     }
@@ -495,13 +496,10 @@ header .navbar-brand img{
 }
 @media screen and (max-width: 400px){
     .lk > span{
-        display: none !important;
+        font-size: 10px !important;
     }
-    .lk{
-        width: 1%;
-    }
-    .lk-div{
-        width: 50% !important;
+    .lk-box{
+        width: 100%;
     }
     .btn-toggle-box,.logo-box{
         width: 35% !important;
